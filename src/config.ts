@@ -1,10 +1,10 @@
-import Phaser from "phaser";
-import GameScene from "./scenes/Game";
+import Phaser from 'phaser'
+import GameScene from './scenes/Game'
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
-  parent: "game",
-  backgroundColor: "#000000",
+  parent: 'game',
+  backgroundColor: '#000000',
   audio: { noAudio: true },
   scale: {
     width: 1920,
@@ -13,6 +13,6 @@ const config: Phaser.Types.Core.GameConfig = {
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
   scene: [GameScene],
-};
+}
 
-export default config;
+export default config

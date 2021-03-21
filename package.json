@@ -1,26 +1,27 @@
 {
-  "name": "your-package-name",
-  "productName": "YOUR_APP_SHORT_NAME",
+  "name": "phaser-tetris",
+  "productName": "PhaserTetris",
   "version": "0.0.1",
   "buildVersion": "0.0.1",
-  "description": "YOUR_APPLICATION_DESCRIPTON",
+  "description": "Tetris built on the TROPIC template",
   "private": "true",
-  "author": "YOUR_NAME <YOUR_EMAIL_ADDRESS> (https://github.com/YOUR_GITHUB_USER)",
+  "author": "George Georgulas IV <georgegeorgulas@gmail.com> (https://github.com/VirtualEstatePlanner)",
   "license": "Unlicense",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USER/YOUR_GITHUB_REPO.git"
+    "url": "git+https://github.com/VirtualEstatePlanner/tetris.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USER/YOUR_GITHUB_REPO/issues"
+    "url": "https://github.com/VirtualEstatePlanner/tetris/issues"
   },
-  "homepage": "https://github.com/YOUR_GITHUB_USER/YOUR_GITHUB_REPO#readme",
+  "homepage": "https://github.com/VirtualEstatePlanner/tetris#readme",
   "main": "dist/index.js",
   "scripts": {
     "cap-prepare": "yarn cap add ios && yarn cap sync ios && yarn cap add android && yarn cap sync android",
     "cap-a": "cap sync android && cap open android",
     "cap-i": "cap sync ios && cap open ios",
-    "clean": "rm -rf .gradle android dist ios node_modules yarn.lock && mkdir dist && cp index.html dist && yarn && yarn cap-prepare",
+    "pretty": "node node_modules/.bin/prettier --write .",
+    "clean": "rm -rf .gradle android ios node_modules yarn.lock && cp index.html dist && yarn && yarn cap-prepare",
     "build": "vite build",
     "dev": "tsc -w & vite",
     "redev": "yarn clean && yarn build && yarn dev",

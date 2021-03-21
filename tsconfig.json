@@ -17,5 +17,5 @@
     "types": ["vite/client"],
     "typeRoots": ["src/typings/**/*.d.ts"]
   },
-  "include": ["./src/**/*", "./public/**/*"],
+  "include": ["./src/**/*", "./public/**/*"]
 }
