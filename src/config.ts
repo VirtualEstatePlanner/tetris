@@ -1,8 +1,11 @@
 import Phaser from 'phaser'
-import { LoadScene, MenuScene, GameScene, GameUIScene } from './scenes'
+import { GameScene } from './scenes/GameScene'
+import { GameUIScene } from './scenes/GameUIScene'
+import { LoadScene } from './scenes/LoadScene'
+import { MenuScene } from './scenes/MenuScene'
 
 const config: Phaser.Types.Core.GameConfig = {
-  height: 640,
+  height: 720,
   width: 480,
   parent: 'content',
   physics: {
