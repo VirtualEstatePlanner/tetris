@@ -4,7 +4,8 @@ import GameData from '../GameData'
 import { Block } from '../blocks/Block'
 import { IBlock, JBlock, LBlock, SBlock, ZBlock, TBlock, OBlock } from '../blocks'
 import { Board } from '../Board'
-import { GameUIScene, MenuScene } from './'
+import { GameUIScene } from './GameUIScene'
+import { MenuScene } from './MenuScene'
 
 export class GameScene extends BaseGameScene {
   private cursors!: Phaser.Types.Input.Keyboard.CursorKeys
