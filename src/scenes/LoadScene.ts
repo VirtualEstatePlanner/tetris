@@ -1,5 +1,5 @@
 import { Scene } from 'phaser'
-import { MenuScene } from './'
+import { MenuScene } from './MenuScene'
 
 export class LoadScene extends Scene {
   constructor() {
