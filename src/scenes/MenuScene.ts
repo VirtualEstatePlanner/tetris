@@ -1,6 +1,6 @@
 import { BaseGameScene } from './BaseGameScene'
 import GameData from '../GameData'
-import { GameScene } from './'
+import { GameScene } from './GameScene'
 
 export class MenuScene extends BaseGameScene {
   private textStyle = { color: this.textColor, align: 'center', fontSize: '24' }
