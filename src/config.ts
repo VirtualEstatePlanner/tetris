@@ -1,17 +1,21 @@
 import Phaser from 'phaser'
-import Game from './scenes/Game'
+import { LoadScene, MenuScene, GameScene, GameUIScene } from './scenes'
 
 const config: Phaser.Types.Core.GameConfig = {
-  type: Phaser.AUTO,
-  parent: 'game',
-  audio: { noAudio: true },
-  scale: {
-    width: 1920,
-    height: 1080,
-    mode: Phaser.Scale.FIT,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
+  height: 640,
+  width: 480,
+  parent: 'content',
+  physics: {
+    arcade: {
+      debug: true,
+      gravity: { y: 0 },
+    },
+    default: 'arcade',
   },
-  scene: [Game],
+  pixelArt: false,
+  scene: [LoadScene, MenuScene, GameScene, GameUIScene],
+  type: 0,
+  zoom: 1,
 }
 
 export default config

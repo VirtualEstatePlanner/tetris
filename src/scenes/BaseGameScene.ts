@@ -5,9 +5,12 @@ export class BaseGameScene extends Scene {
   protected backgroundColor: number = 0xf8f8f8
   protected gameBoardColor: number = 0xeeeeee
 
-  protected width: number = this.game.config.width as number
-
-  protected height: number = this.game.config.height as number
+  protected get width() {
+    return this.game.config.width as number
+  }
+  protected get height() {
+    return this.game.config.height as number
+  }
 
   public create() {
     this.setBackground()
